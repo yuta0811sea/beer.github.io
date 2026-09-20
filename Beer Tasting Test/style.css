@@ -1,0 +1,269 @@
+/* =========================
+   全体
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+    font-family:
+        "Hiragino Kaku Gothic ProN",
+        "Yu Gothic",
+        sans-serif;
+    color: #333;
+}
+
+.site {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    background: #fff;
+}
+
+.site-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   MENUボタン
+========================= */
+
+.menu-button {
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #1f5c9c;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.menu-button span {
+    display: block;
+
+    width: 22px;
+    height: 2px;
+
+    margin: 2px 0;
+
+    background: white;
+}
+
+.menu-button small {
+    margin-top: 3px;
+
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    padding: 40px 30px 60px;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eee;
+
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero-catch {
+    font-size: 24px;
+    line-height: 1.6;
+
+    color: #a71922;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   診断ボタン
+========================= */
+
+.diagnosis-button {
+    width: 85%;
+    max-width: 330px;
+
+    padding: 18px;
+
+    border: none;
+    border-radius: 50px;
+
+    background: #a71922;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.diagnosis-button:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================
+   Beer
+========================= */
+
+.beer-section {
+    padding: 60px 30px;
+    background: #f7f3ed;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    color: #a71922;
+}
+
+.section-heading p {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.beer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.beer-card {
+    background: white;
+    padding: 20px;
+
+    text-align: center;
+
+    border: 1px solid #ddd;
+}
+
+.beer-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.beer-image {
+    width: 100%;
+    height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eee;
+
+    margin-bottom: 15px;
+}
+
+.beer-card a {
+    color: #a71922;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Column
+========================= */
+
+.column-section {
+    padding: 60px 30px;
+}
+
+.column-card {
+    min-height: 150px;
+
+    padding: 25px;
+
+    background: #f5f5f5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+    padding: 40px 20px;
+
+    background: #a71922;
+    color: white;
+
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.footer small {
+    font-size: 10px;
+}
