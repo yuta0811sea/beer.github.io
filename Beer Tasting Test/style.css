@@ -480,3 +480,112 @@ body {
     }
 
 }
+
+.menu-check{
+   display: none;
+}
+
+.menu-overlay{
+   position: fixed;
+
+   top: 0;
+   left: 50%;
+
+   width: 100%;
+   max-width: 430px;
+   height: 100vh;
+
+   transform: translateX(-50%) translateX(100%);
+
+   background: #a51e25;
+
+   z-index: 100;
+   transition: transform 0.3s ease;
+   color: #ffffff;
+}
+
+.menu-check:checked ~ .menu-overlay {
+    transform: translateX(-50%) translateX(0);
+}
+
+.menu-inner {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 70px 30px 30px;
+}
+
+.menu-close {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    font-size: 32px;
+    font-weight: 200;
+
+    cursor: pointer;
+}
+
+
+/* MENUリスト */
+
+.menu-list {
+    list-style: none;
+
+    width: 100%;
+}
+
+
+.menu-list li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+
+.menu-list li:first-child {
+    border-top: none;
+}
+
+
+.menu-list a {
+    display: block;
+
+    padding: 12px 5px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+
+.menu-list strong {
+    display: block;
+
+    font-size: 18px;
+
+    line-height: 1.2;
+}
+
+
+.menu-list small {
+    display: block;
+
+    margin-top: 2px;
+
+    font-size: 7px;
+
+    opacity: 0.9;
+}
+
+
