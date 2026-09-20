@@ -1,6 +1,6 @@
-/* =========================
-   全体
-========================= */
+/* =====================================
+   Reset
+===================================== */
 
 * {
     margin: 0;
@@ -8,58 +8,84 @@
     box-sizing: border-box;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
-    background: #f2f2f2;
+    margin: 0;
+
+    background: #1c1c1c;
+
     font-family:
         "Hiragino Kaku Gothic ProN",
         "Yu Gothic",
+        "Meiryo",
         sans-serif;
-    color: #333;
+
+    color: #a51e25;
 }
+
+
+/* =====================================
+   Site
+===================================== */
 
 .site {
     width: 100%;
     max-width: 430px;
-    margin: 0 auto;
-    background: #fff;
+
     min-height: 100vh;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    overflow: hidden;
 }
 
 
-/* =========================
+/* =====================================
    Header
-========================= */
+===================================== */
 
 .header {
-    height: 70px;
+    width: 100%;
+    height: 72px;
+
+    padding: 0 14px 0 20px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 20px;
-
-    background: #fff;
-}
-
-.site-name {
-    font-size: 18px;
-    font-weight: bold;
+    background: #ffffff;
 }
 
 
-/* =========================
-   MENUボタン
-========================= */
+.site-title {
+    color: #333333;
+
+    text-decoration: none;
+
+    font-size: 7px;
+    line-height: 1.5;
+}
+
+
+/* =====================================
+   Menu Button
+===================================== */
 
 .menu-button {
-    width: 55px;
-    height: 55px;
+    width: 38px;
+    height: 45px;
 
     border: none;
-    border-radius: 50%;
 
-    background: #1f5c9c;
-    color: white;
+    background: transparent;
 
     display: flex;
     flex-direction: column;
@@ -68,202 +94,389 @@ body {
 
     cursor: pointer;
 }
+
 
 .menu-button span {
     display: block;
 
-    width: 22px;
-    height: 2px;
+    width: 18px;
+    height: 1px;
 
     margin: 2px 0;
 
-    background: white;
+    background: #0068a9;
 }
+
 
 .menu-button small {
     margin-top: 3px;
 
-    font-size: 8px;
-    letter-spacing: 1px;
+    color: #0068a9;
+
+    font-size: 6px;
+    font-weight: bold;
 }
 
 
-/* =========================
+/* =====================================
    Hero
-========================= */
+===================================== */
 
 .hero {
-    padding: 40px 30px 60px;
+    padding: 18px 20px 35px;
+
     text-align: center;
+
+    background: #ffffff;
 }
 
-.hero-image {
+
+.hero-visual {
     width: 100%;
-    height: 220px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero-placeholder {
+    width: 100%;
+    height: 225px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background: #eee;
+    background: #d89498;
 
-    margin-bottom: 25px;
+    color: #ffffff;
+
+    font-size: 10px;
 }
+
 
 .hero-description {
-    font-size: 13px;
-    margin-bottom: 15px;
-}
+    margin-bottom: 8px;
 
-.hero-catch {
-    font-size: 24px;
-    line-height: 1.6;
+    color: #333333;
 
-    color: #a71922;
-
-    margin-bottom: 30px;
+    font-size: 7px;
 }
 
 
-/* =========================
-   診断ボタン
-========================= */
+.hero-title {
+    margin-bottom: 20px;
+
+    color: #a51e25;
+
+    font-size: 17px;
+    line-height: 1.45;
+
+    font-weight: bold;
+}
+
+
+/* =====================================
+   Diagnosis Button
+===================================== */
 
 .diagnosis-button {
-    width: 85%;
-    max-width: 330px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    padding: 18px;
+    width: 135px;
+    height: 35px;
 
-    border: none;
-    border-radius: 50px;
+    border: 1px solid #0068a9;
+    border-radius: 5px;
 
-    background: #a71922;
-    color: white;
+    background: #ffffff;
 
-    font-size: 18px;
+    color: #0068a9;
+
+    text-decoration: none;
+
+    font-size: 11px;
     font-weight: bold;
-
-    cursor: pointer;
 }
+
+
+.diagnosis-button span {
+    margin-left: 8px;
+
+    font-size: 9px;
+}
+
 
 .diagnosis-button:hover {
-    opacity: 0.85;
+    background: #0068a9;
+    color: #ffffff;
 }
 
 
-/* =========================
-   Beer
-========================= */
+/* =====================================
+   Beer Section
+===================================== */
 
 .beer-section {
-    padding: 60px 30px;
-    background: #f7f3ed;
+    padding: 15px 20px 45px;
+
+    background: #ffffff;
 }
 
-.section-heading {
-    text-align: center;
-    margin-bottom: 35px;
+
+.section-title {
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid #a51e25;
+
+    display: flex;
+    align-items: baseline;
 }
 
-.section-heading h2 {
-    font-size: 36px;
-    color: #a71922;
+
+.section-title h2 {
+    margin-right: 8px;
+
+    color: #a51e25;
+
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    line-height: 1;
 }
 
-.section-heading p {
-    margin-top: 5px;
-    font-size: 13px;
+
+.section-title p {
+    color: #a51e25;
+
+    font-size: 7px;
 }
+
+
+/* =====================================
+   Beer Cards
+===================================== */
 
 .beer-list {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 14px;
 }
+
 
 .beer-card {
-    background: white;
-    padding: 20px;
-
     text-align: center;
-
-    border: 1px solid #ddd;
 }
+
 
 .beer-card h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
+
+    color: #a51e25;
+
+    font-size: 9px;
 }
+
+
+/* Beer Image */
 
 .beer-image {
     width: 100%;
-    height: 180px;
+    height: 125px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background: #eee;
-
-    margin-bottom: 15px;
+    background: #d89498;
 }
+
+
+.beer-image span {
+    color: #ffffff;
+
+    font-size: 8px;
+
+    line-height: 1.5;
+}
+
+
+/* 詳しく */
 
 .beer-card a {
-    color: #a71922;
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: #a51e25;
+
+    font-size: 8px;
+
     text-decoration: none;
-    font-size: 14px;
 }
 
 
-/* =========================
+.beer-card a span {
+    margin-left: 5px;
+
+    font-size: 12px;
+}
+
+
+/* =====================================
+   Diagnosis Area
+===================================== */
+
+.diagnosis-area {
+    margin-top: 42px;
+
+    text-align: center;
+}
+
+
+.diagnosis-area p {
+    margin-bottom: 12px;
+
+    color: #a51e25;
+
+    font-size: 9px;
+
+    line-height: 1.6;
+
+    font-weight: bold;
+}
+
+
+.diagnosis-button.small {
+    width: 125px;
+    height: 32px;
+
+    font-size: 10px;
+}
+
+
+/* =====================================
    Column
-========================= */
+===================================== */
 
 .column-section {
-    padding: 60px 30px;
+    padding: 15px 20px 45px;
+
+    background: #ffffff;
 }
 
-.column-card {
-    min-height: 150px;
 
-    padding: 25px;
+.column-box {
+    width: 100%;
+    min-height: 85px;
 
-    background: #f5f5f5;
+    padding: 15px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    background: #ead2d4;
+
+    border-radius: 5px;
+
     text-align: center;
 }
 
 
-/* =========================
+.column-box p {
+    color: #ffffff;
+
+    font-size: 7px;
+
+    line-height: 1.7;
+}
+
+
+.column-link {
+    display: block;
+
+    width: fit-content;
+
+    margin: 12px auto 0;
+
+    color: #a51e25;
+
+    font-size: 8px;
+
+    text-decoration: none;
+}
+
+
+.column-link span {
+    margin-left: 5px;
+
+    font-size: 12px;
+}
+
+
+/* =====================================
    Footer
-========================= */
+===================================== */
 
 .footer {
-    padding: 40px 20px;
+    min-height: 105px;
 
-    background: #a71922;
-    color: white;
+    padding: 18px 20px;
+
+    background: #a51e25;
+
+    color: #ffffff;
 
     text-align: center;
 }
 
-.footer-logo {
-    font-size: 28px;
-    font-weight: bold;
 
-    margin-bottom: 10px;
+.footer-logo {
+    width: 50px;
+    height: 50px;
+
+    margin: 0 auto 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #a51e25;
+
+    font-size: 11px;
+    font-weight: bold;
 }
+
 
 .footer p {
-    font-size: 11px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+
+    font-size: 6px;
 }
 
+
 .footer small {
-    font-size: 10px;
+    font-size: 5px;
+}
+
+
+/* =====================================
+   PCで見たとき
+===================================== */
+
+@media screen and (min-width: 431px) {
+
+    .site {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+
 }
