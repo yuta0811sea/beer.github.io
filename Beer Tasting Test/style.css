@@ -538,9 +538,6 @@ body {
     cursor: pointer;
 }
 
-
-/* MENUリスト */
-
 .menu-list {
     list-style: none;
 
@@ -588,4 +585,93 @@ body {
     opacity: 0.9;
 }
 
+/* =====================================
+   Beer Page
+===================================== */
 
+.beer-page {
+    padding: 25px 20px 60px;
+    background: #ffffff;
+}
+
+.page-title {
+    margin-bottom: 35px;
+
+    border-bottom: 1px solid #a51e25;
+}
+
+.page-title h1 {
+    color: #a51e25;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    line-height: 1.1;
+}
+
+.page-title p {
+    margin: 5px 0 8px;
+
+    color: #a51e25;
+
+    font-size: 8px;
+}
+
+
+/* =====================================
+   Beer Page Card
+===================================== */
+
+.beer-page-card {
+    margin-bottom: 45px;
+
+    text-align: center;
+}
+
+.beer-page-image {
+    width: 150px;
+    height: 230px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #d89498;
+}
+
+.beer-page-image span {
+    color: #ffffff;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+.beer-page-text h2 {
+    margin-bottom: 10px;
+
+    color: #a51e25;
+
+    font-size: 17px;
+}
+
+.beer-page-text p {
+    margin-bottom: 15px;
+
+    color: #a51e25;
+
+    font-size: 8px;
+
+    line-height: 1.7;
+}
+
+.beer-page-text a {
+    color: #a51e25;
+
+    font-size: 8px;
+
+    text-decoration: none;
+}
