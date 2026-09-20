@@ -1,117 +1,226 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ビール利き診断</title>
+
+    <title>カブトビール利き診断</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="site">
 
-        <!-- ヘッダー -->
+        <!-- =====================
+             Header
+        ====================== -->
         <header class="header">
-            <p class="site-name">ビール利き診断</p>
+
+            <a href="index.html" class="site-title">
+                半田赤レンガ<br>
+                カブトビール
+            </a>
 
             <button class="menu-button">
                 <span></span>
                 <span></span>
                 <span></span>
+
                 <small>MENU</small>
             </button>
+
         </header>
 
-        <!-- メイン -->
+
+        <!-- =====================
+             Main
+        ====================== -->
         <main>
 
             <!-- Hero -->
             <section class="hero">
 
-                <div class="hero-image">
-                    ロゴ
+                <div class="hero-visual">
+                    <div class="hero-placeholder">
+                        ロゴ・メインビジュアル
+                    </div>
                 </div>
+
 
                 <p class="hero-description">
                     半田赤レンガ倉庫のカブトビール
                 </p>
 
-                <h2 class="hero-catch">
-                    あなたの好みに合う1杯を<br>
-                    ご提案します
-                </h2>
 
-                <button class="diagnosis-button">
+                <h1 class="hero-title">
+                    あなたの好みに合う<br>
+                    1杯をご提案します
+                </h1>
+
+
+                <a href="start.html" class="diagnosis-button">
                     診断する！
-                </button>
+                    <span>▶</span>
+                </a>
 
             </section>
 
-            <!-- Beer -->
+
+            <!-- =====================
+                 Beer
+            ====================== -->
             <section class="beer-section">
 
-                <div class="section-heading">
+                <div class="section-title">
+
                     <h2>Beer</h2>
-                    <p>3種のカブトビール</p>
+
+                    <p>
+                        3種のカブトビール
+                    </p>
+
                 </div>
+
 
                 <div class="beer-list">
 
-                    <div class="beer-card">
+                    <!-- 明治 -->
+                    <article class="beer-card">
+
                         <h3>明治</h3>
-                        <div class="beer-image">画像</div>
-                        <a href="#">詳しく →</a>
-                    </div>
 
-                    <div class="beer-card">
+                        <div class="beer-image">
+                            <span>明治<br>画像</span>
+                        </div>
+
+                        <a href="meiji.html">
+                            詳しく
+                            <span>→</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 大正 -->
+                    <article class="beer-card">
+
                         <h3>大正</h3>
-                        <div class="beer-image">画像</div>
-                        <a href="#">詳しく →</a>
-                    </div>
 
-                    <div class="beer-card">
+                        <div class="beer-image">
+                            <span>大正<br>画像</span>
+                        </div>
+
+                        <a href="taisho.html">
+                            詳しく
+                            <span>→</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 昭和 -->
+                    <article class="beer-card">
+
                         <h3>昭和</h3>
-                        <div class="beer-image">画像</div>
-                        <a href="#">詳しく →</a>
-                    </div>
+
+                        <div class="beer-image">
+                            <span>昭和<br>画像</span>
+                        </div>
+
+                        <a href="showa.html">
+                            詳しく
+                            <span>→</span>
+                        </a>
+
+                    </article>
+
+                </div>
+
+
+                <!-- 再度診断 -->
+                <div class="diagnosis-area">
+
+                    <p>
+                        あなたにあったビールが<br>
+                        見つかるかも？
+                    </p>
+
+                    <a href="start.html" class="diagnosis-button small">
+                        診断する！
+                        <span>▶</span>
+                    </a>
 
                 </div>
 
             </section>
 
-            <!-- Column -->
+
+            <!-- =====================
+                 Column
+            ====================== -->
             <section class="column-section">
 
-                <div class="section-heading">
+                <div class="section-title">
+
                     <h2>Column</h2>
-                    <p>カブトビールの豆知識</p>
+
+                    <p>
+                        カブトビールの豆知識
+                    </p>
+
                 </div>
 
-                <div class="column-card">
-                    豆知識を書く場所
+
+                <div class="column-box">
+
+                    <p>
+                        カブトビールについての<br>
+                        歴史や豆知識を紹介します。
+                    </p>
+
                 </div>
+
+
+                <a href="column.html" class="column-link">
+                    詳しく見る
+                    <span>→</span>
+                </a>
 
             </section>
 
         </main>
 
-        <!-- Footer -->
+
+        <!-- =====================
+             Footer
+        ====================== -->
         <footer class="footer">
 
             <div class="footer-logo">
                 HAnDA
             </div>
 
-            <p>Heritage Augmentation and Digital Activation</p>
+            <p>
+                Heritage Augmentation and Digital Activation
+            </p>
 
-            <small>© 2026 HAnDA project</small>
+            <small>
+                © 2026 HAnDA project
+            </small>
 
         </footer>
 
     </div>
 
+
     <script src="script.js"></script>
+
+</body>
+
+</html>
 
 </body>
 </html>
