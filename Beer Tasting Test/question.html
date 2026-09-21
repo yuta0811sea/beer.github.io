@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question | カブトビール利き診断</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="site">
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <a href="index.html" class="site-logo">
+            KABUTO BEER
+        </a>
+
+        <input type="checkbox" id="menu-check" class="menu-check">
+
+        <label for="menu-check" class="menu-button">
+            <span></span>
+            <span></span>
+            <small>MENU</small>
+        </label>
+
+        <!-- メニュー -->
+        <div class="menu-overlay">
+            <div class="menu-inner">
+
+                <label for="menu-check" class="menu-close">
+                    ×
+                </label>
+
+                <nav class="menu-list">
+                    <a href="index.html">Home</a>
+                    <a href="start.html">Start</a>
+                    <a href="beer.html">Beer</a>
+                    <a href="column.html">Column</a>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- 診断 -->
+    <main class="question-page">
+
+        <p class="page-label">QUESTION</p>
+
+        <!-- 問題番号 -->
+        <p class="question-number">
+            QUESTION <span id="question-number">1</span> / 3
+        </p>
+
+        <!-- 質問 -->
+        <h1 id="question-text">
+            ビールを飲むとき、<br>
+            どんな味わいが好き？
+        </h1>
+
+        <!-- 選択肢 -->
+        <div class="question-options">
+
+            <button class="question-option" data-value="sweet">
+                甘みのある<br>
+                やさしい味
+            </button>
+
+            <button class="question-option" data-value="balanced">
+                すっきりとした<br>
+                バランスのよい味
+            </button>
+
+            <button class="question-option" data-value="bitter">
+                しっかりとした<br>
+                苦味のある味
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- フッター -->
+    <footer class="footer">
+        <p>HAnDA project</p>
+        <small>
+            Heritage Augmentation and Digital Activation
+        </small>
+        <small>
+            © 2026 HAnDA project
+        </small>
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
