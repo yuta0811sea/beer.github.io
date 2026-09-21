@@ -675,3 +675,79 @@ body {
 
     text-decoration: none;
 }
+
+/* =====================================
+   Beer Detail Page
+===================================== */
+
+.beer-detail {
+    padding: 40px 30px 60px;
+
+    text-align: center;
+
+    background: #ffffff;
+}
+
+
+.beer-detail-image {
+    width: 165px;
+    height: 180px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #d89498;
+}
+
+
+.beer-detail-image span {
+    color: #ffffff;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+.beer-detail h1 {
+    margin-bottom: 25px;
+
+    color: #a51e25;
+
+    font-size: 20px;
+}
+
+.beer-detail-description {
+    margin-bottom: 70px;
+}
+
+
+.beer-detail-description h2 {
+    margin-bottom: 12px;
+
+    color: #a51e25;
+
+    font-size: 9px;
+}
+
+
+.beer-detail-description p {
+    color: #a51e25;
+
+    font-size: 8px;
+
+    line-height: 1.8;
+}
+
+.back-link {
+    color: #a51e25;
+
+    font-size: 8px;
+
+    text-decoration: none;
+}
+
+
+
