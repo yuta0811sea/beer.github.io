@@ -1131,177 +1131,228 @@ body {
 
 }
 
-/* =========================
-   Text Size Adjustment
-========================= */
+/* =====================================
+   全体の文字サイズを大きくする
+===================================== */
 
 /* Header */
 .site-title {
-    font-size: 20px;
+    font-size: 12px;
+    line-height: 1.5;
 }
 
 .menu-button small {
+    font-size: 9px;
+}
+
+
+/* -------------------------
+   Hero
+------------------------- */
+
+.hero-description {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.hero-title {
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+
+/* -------------------------
+   診断ボタン
+------------------------- */
+
+.diagnosis-button {
+    font-size: 15px;
+}
+
+.diagnosis-button span {
+    font-size: 13px;
+}
+
+
+/* -------------------------
+   セクションタイトル
+------------------------- */
+
+.section-title h2 {
+    font-size: 30px;
+}
+
+.section-title p {
+    font-size: 11px;
+}
+
+
+/* -------------------------
+   Beer
+------------------------- */
+
+.beer-card h3 {
+    font-size: 14px;
+}
+
+.beer-image span {
+    font-size: 12px;
+}
+
+.beer-card a {
+    font-size: 12px;
+}
+
+.beer-card a span {
+    font-size: 15px;
+}
+
+
+/* -------------------------
+   診断エリア
+------------------------- */
+
+.diagnosis-area p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.diagnosis-button.small {
+    font-size: 14px;
+}
+
+
+/* -------------------------
+   Column
+------------------------- */
+
+.column-box p {
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.column-link {
+    font-size: 12px;
+}
+
+.column-link span {
+    font-size: 15px;
+}
+
+
+/* -------------------------
+   Footer
+------------------------- */
+
+.footer p {
+    font-size: 11px;
+}
+
+.footer small {
     font-size: 8px;
 }
 
 
-/* Hero */
-.hero-description {
-    font-size: 12px;
-}
+/* -------------------------
+   Beer Page
+------------------------- */
 
-.hero-title {
-    font-size: 24px;
-}
-
-
-/* Diagnosis Button */
-.diagnosis-button {
-    font-size: 13px;
-}
-
-.diagnosis-button span {
-    font-size: 11px;
-}
-
-
-/* Section Title */
-.section-title p {
-    font-size: 10px;
-}
-
-
-/* Beer Cards */
-.beer-card h3 {
-    font-size: 12px;
-}
-
-.beer-image span {
-    font-size: 10px;
-}
-
-.beer-card a {
-    font-size: 11px;
-}
-
-.beer-card a span {
-    font-size: 13px;
-}
-
-
-/* Diagnosis Area */
-.diagnosis-area p {
-    font-size: 12px;
-}
-
-.diagnosis-button.small {
-    font-size: 12px;
-}
-
-
-/* Column */
-.column-box p {
-    font-size: 10px;
-}
-
-.column-link {
-    font-size: 11px;
-}
-
-.column-link span {
-    font-size: 13px;
-}
-
-
-/* Footer */
-.footer p {
-    font-size: 9px;
-}
-
-.footer small {
-    font-size: 7px;
-}
-
-
-/* Beer Page */
 .page-title h1 {
-    font-size: 36px;
+    font-size: 38px;
 }
 
 .page-title p {
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .beer-page-text h2 {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .beer-page-text p {
-    font-size: 11px;
+    font-size: 13px;
+    line-height: 1.8;
 }
 
 .beer-page-text a {
-    font-size: 11px;
-}
-
-
-/* Beer Detail */
-.beer-detail h1 {
-    font-size: 24px;
-}
-
-.beer-detail-description h2 {
     font-size: 12px;
 }
 
-.beer-detail-description p {
-    font-size: 11px;
+
+/* -------------------------
+   Beer Detail
+------------------------- */
+
+.beer-detail h1 {
+    font-size: 27px;
 }
 
-.back-link {
-    font-size: 11px;
-}
-
-
-/* Column Page */
-.column-number {
-    font-size: 16px;
-}
-
-.column-article h2 {
-    font-size: 20px;
-}
-
-.column-article p {
-    font-size: 11px;
-}
-
-
-/* Question */
-.question-number {
+.beer-detail-description h2 {
     font-size: 14px;
 }
 
+.beer-detail-description p {
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.back-link {
+    font-size: 12px;
+}
+
+
+/* -------------------------
+   Column Page
+------------------------- */
+
+.column-number {
+    font-size: 18px;
+}
+
+.column-article h2 {
+    font-size: 22px;
+}
+
+.column-article p {
+    font-size: 13px;
+    line-height: 2;
+}
+
+
+/* -------------------------
+   Question
+------------------------- */
+
+.question-number {
+    font-size: 15px;
+}
+
 .question-page h1 {
-    font-size: 26px;
+    font-size: 28px;
+    line-height: 1.7;
 }
 
 .question-option {
-    font-size: 17px;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 
-/* Result */
+/* -------------------------
+   Result
+------------------------- */
+
 .result-lead {
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .result-page h1 {
-    font-size: 32px;
+    font-size: 34px;
 }
 
 .result-description {
-    font-size: 16px;
+    font-size: 17px;
+    line-height: 2;
 }
 
 .retry-link {
@@ -1309,17 +1360,23 @@ body {
 }
 
 
-/* Loading */
+/* -------------------------
+   Loading
+------------------------- */
+
 .loading-text {
-    font-size: 22px;
-}
-
-
-/* Menu */
-.menu-list strong {
     font-size: 24px;
 }
 
+
+/* -------------------------
+   Menu
+------------------------- */
+
+.menu-list strong {
+    font-size: 28px;
+}
+
 .menu-list small {
-    font-size: 10px;
+    font-size: 11px;
 }
