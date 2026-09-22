@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loading | カブトビール利き診断</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="loading-page">
+
+        <div class="loading-content">
+
+            <!-- ビール瓶 -->
+            <div class="loading-bottles">
+
+                <div class="bottle bottle-meiji">
+                    <div class="bottle-neck"></div>
+                    <div class="bottle-body"></div>
+                </div>
+
+                <div class="bottle bottle-taisho">
+                    <div class="bottle-neck"></div>
+                    <div class="bottle-body"></div>
+                </div>
+
+                <div class="bottle bottle-showa">
+                    <div class="bottle-neck"></div>
+                    <div class="bottle-body"></div>
+                </div>
+
+            </div>
+
+
+            <!-- Loading -->
+            <p class="loading-text">
+                Loading
+            </p>
+
+        </div>
+
+
+        <!-- 動く丸 -->
+        <div class="loading-circle"></div>
+
+    </main>
+
+
+    <script>
+
+        // 3秒後に質問画面へ移動
+        setTimeout(function () {
+            window.location.href = "question.html";
+        }, 3000);
+
+    </script>
+
+</body>
+</html>
