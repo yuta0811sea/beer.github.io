@@ -1090,14 +1090,6 @@ body {
    Loading Bottle Animation
 ========================= */
 
-.loading-bottles {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 7px;
-}
-
-/* 3本の瓶を順番に動かす */
 .loading-bottles .bottle {
     animation: bottleLoading 1.5s ease-in-out infinite;
 }
@@ -1118,29 +1110,23 @@ body {
 }
 
 
-/* 瓶が上下しながら明るくなる */
+/* 瓶だけ上下に動かす */
 @keyframes bottleLoading {
 
     0% {
         transform: translateY(0);
-        opacity: 0.35;
     }
 
     25% {
         transform: translateY(-12px);
-        opacity: 1;
     }
 
     50% {
         transform: translateY(0);
-        opacity: 0.35;
     }
 
     100% {
         transform: translateY(0);
-        opacity: 0.35;
     }
 
 }
-
-
