@@ -148,3 +148,84 @@ if (questionPage) {
     // 最初の質問を表示
     showQuestion();
 }
+
+// =========================
+// 診断結果の表示
+// =========================
+
+const resultPage = document.querySelector(".result-page");
+
+if (resultPage) {
+
+    // 保存した点数を取得
+    const savedScores =
+        localStorage.getItem("beerScores");
+
+    // 結果が存在しない場合
+    if (!savedScores) {
+
+        window.location.href = "start.html";
+
+    } else {
+
+        const scores =
+            JSON.parse(savedScores);
+
+
+        // 一番点数が高いビールを調べる
+        let result = "meiji";
+
+        if (scores.taisho > scores[result]) {
+            result = "taisho";
+        }
+
+        if (scores.showa > scores[result]) {
+            result = "showa";
+        }
+
+
+        // 結果データ
+        const resultData = {
+
+            meiji: {
+                name: "明治カブトビール",
+                description:
+                    "やさしい味わいを好むあなたには、明治カブトビールがおすすめです。",
+                link: "meiji.html"
+            },
+
+            taisho: {
+                name: "大正カブトビール",
+                description:
+                    "バランスのよい味わいを好むあなたには、大正カブトビールがおすすめです。",
+                link: "taisho.html"
+            },
+
+            showa: {
+                name: "昭和カブトビール",
+                description:
+                    "しっかりとした味わいを好むあなたには、昭和カブトビールがおすすめです。",
+                link: "showa.html"
+            }
+
+        };
+
+
+        // 選ばれた結果
+        const data = resultData[result];
+
+
+        // HTMLを書き換える
+        document.getElementById("result-name")
+            .textContent = data.name;
+
+        document.getElementById("result-description")
+            .textContent = data.description;
+
+        document.getElementById("result-link")
+            .href = data.link;
+
+    }
+}
+
+
