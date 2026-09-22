@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result | カブトビール利き診断</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="site">
+
+    <!-- ヘッダー -->
+    <header class="header">
+
+        <a href="index.html" class="site-logo">
+            KABUTO BEER
+        </a>
+
+        <input type="checkbox" id="menu-check" class="menu-check">
+
+        <label for="menu-check" class="menu-button">
+            <span></span>
+            <span></span>
+            <small>MENU</small>
+        </label>
+
+        <!-- メニュー -->
+        <div class="menu-overlay">
+
+            <div class="menu-inner">
+
+                <label for="menu-check" class="menu-close">
+                    ×
+                </label>
+
+                <nav class="menu-list">
+                    <a href="index.html">Home</a>
+                    <a href="start.html">Start</a>
+                    <a href="beer.html">Beer</a>
+                    <a href="column.html">Column</a>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- 診断結果 -->
+    <main class="result-page">
+
+        <p class="page-label">
+            RESULT
+        </p>
+
+        <p class="result-lead">
+            あなたにおすすめの
+        </p>
+
+        <h1 id="result-name">
+            カブトビール
+        </h1>
+
+        <div class="result-image" id="result-image">
+            <!-- 後でビール画像を入れます -->
+            <span>BEER IMAGE</span>
+        </div>
+
+        <p id="result-description" class="result-description">
+            診断結果を読み込んでいます。
+        </p>
+
+        <a id="result-link"
+           href="beer.html"
+           class="diagnosis-button">
+            <span>詳しく見る</span>
+            <span class="arrow">→</span>
+        </a>
+
+        <a href="start.html" class="retry-link">
+            もう一度診断する
+        </a>
+
+    </main>
+
+
+    <!-- フッター -->
+    <footer class="footer">
+
+        <p>HAnDA project</p>
+
+        <small>
+            Heritage Augmentation and Digital Activation
+        </small>
+
+        <small>
+            © 2026 HAnDA project
+        </small>
+
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
