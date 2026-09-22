@@ -878,7 +878,65 @@ body {
     transform: scale(0.98);
 }
 
+/* =========================
+   Result Page
+========================= */
 
+.result-page {
+    min-height: calc(100vh - 140px);
+    padding: 50px 25px 70px;
+    text-align: center;
+}
+
+.result-lead {
+    margin: 35px 0 8px;
+    font-size: 15px;
+    color: #333;
+}
+
+.result-page h1 {
+    margin: 0 0 30px;
+    color: #a51e25;
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+.result-image {
+    width: 100%;
+    max-width: 300px;
+    height: 260px;
+    margin: 0 auto 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+.result-image span {
+    color: #999;
+    font-size: 12px;
+}
+
+.result-description {
+    max-width: 350px;
+    margin: 0 auto 35px;
+
+    font-size: 15px;
+    line-height: 2;
+    color: #333;
+}
+
+.retry-link {
+    display: block;
+    margin-top: 25px;
+
+    color: #0068b7;
+    font-size: 14px;
+    text-decoration: underline;
+}
 
 
 
