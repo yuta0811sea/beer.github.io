@@ -1386,15 +1386,13 @@ body {
 ===================================== */
 
 body {
-    background: #F3EDE2;
+    background: #F8F4EC;
 }
 
 .site {
-    background: #F3EDE2;
+    background: #F8F4EC;
 }
 
-
-/* 各セクション */
 .header,
 .hero,
 .beer-section,
@@ -1404,5 +1402,5 @@ body {
 .column-page,
 .question-page,
 .result-page {
-    background: #F3EDE2;
+    background: #F8F4EC;
 }
