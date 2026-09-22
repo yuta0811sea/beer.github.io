@@ -1380,3 +1380,29 @@ body {
 .menu-list small {
     font-size: 11px;
 }
+
+/* =====================================
+   Ecru Beige Background
+===================================== */
+
+body {
+    background: #F3EDE2;
+}
+
+.site {
+    background: #F3EDE2;
+}
+
+
+/* 各セクション */
+.header,
+.hero,
+.beer-section,
+.column-section,
+.beer-page,
+.beer-detail,
+.column-page,
+.question-page,
+.result-page {
+    background: #F3EDE2;
+}
