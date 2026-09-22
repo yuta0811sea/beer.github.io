@@ -938,6 +938,202 @@ body {
     text-decoration: underline;
 }
 
+/* =========================
+   Loading Page
+========================= */
 
+.loading-page {
+    position: relative;
+
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    background: #a51e25;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loading-content {
+    text-align: center;
+}
+
+
+.loading-bottles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    gap: 7px;
+
+    height: 115px;
+}
+
+
+/* ビール瓶 */
+
+.bottle {
+    position: relative;
+
+    width: 38px;
+    height: 105px;
+}
+
+
+/* 瓶の首 */
+
+.bottle-neck {
+    position: absolute;
+
+    top: 0;
+    left: 11px;
+
+    width: 16px;
+    height: 35px;
+
+    border: 3px solid white;
+    border-bottom: none;
+
+    border-radius: 8px 8px 0 0;
+}
+
+
+/* 瓶の本体 */
+
+.bottle-body {
+    position: absolute;
+
+    left: 4px;
+    bottom: 0;
+
+    width: 30px;
+    height: 75px;
+
+    border: 3px solid white;
+
+    border-radius: 7px 7px 3px 3px;
+
+    box-sizing: border-box;
+}
+
+
+/* ラベル */
+
+.bottle-meiji .bottle-body::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 25px;
+
+    width: 100%;
+    height: 25px;
+
+    background: white;
+
+    transform: rotate(-25deg);
+}
+
+
+.bottle-taisho .bottle-body::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 28px;
+
+    width: 100%;
+    height: 22px;
+
+    background: white;
+}
+
+
+.bottle-showa .bottle-body::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 20px;
+
+    width: 100%;
+    height: 22px;
+
+    background: white;
+}
+
+
+/* 3本目を少し薄く */
+
+.bottle-showa {
+    opacity: 0.35;
+}
+
+
+/* Loading */
+
+.loading-text {
+    margin-top: 18px;
+
+    color: white;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    letter-spacing: 0.08em;
+}
+
+
+/* 動く丸 */
+
+.loading-circle {
+    position: absolute;
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    background: #ead9d9;
+
+    border: 1px solid white;
+
+    animation: loadingMove 2.2s linear infinite;
+}
+
+
+@keyframes loadingMove {
+
+    0% {
+        transform: translate(-130px, 0);
+    }
+
+    25% {
+        transform: translate(130px, -50px);
+    }
+
+    50% {
+        transform: translate(130px, 50px);
+    }
+
+    75% {
+        transform: translate(-130px, 50px);
+    }
+
+    100% {
+        transform: translate(-130px, 0);
+    }
+
+}
 
 
