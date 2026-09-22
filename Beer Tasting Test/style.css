@@ -1085,3 +1085,62 @@ body {
 
     letter-spacing: 0.08em;
 }
+
+/* =========================
+   Loading Bottle Animation
+========================= */
+
+.loading-bottles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 7px;
+}
+
+/* 3本の瓶を順番に動かす */
+.loading-bottles .bottle {
+    animation: bottleLoading 1.5s ease-in-out infinite;
+}
+
+/* 1本目 */
+.loading-bottles .bottle:nth-child(1) {
+    animation-delay: 0s;
+}
+
+/* 2本目 */
+.loading-bottles .bottle:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+/* 3本目 */
+.loading-bottles .bottle:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+
+/* 瓶が上下しながら明るくなる */
+@keyframes bottleLoading {
+
+    0% {
+        transform: translateY(0);
+        opacity: 0.35;
+    }
+
+    25% {
+        transform: translateY(-12px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 0.35;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 0.35;
+    }
+
+}
+
+
