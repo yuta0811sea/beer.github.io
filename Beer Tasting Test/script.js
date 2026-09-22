@@ -164,7 +164,7 @@ if (resultPage) {
     // 結果が存在しない場合
     if (!savedScores) {
 
-        window.location.href = "start.html";
+        window.location.href = "loading.html";
 
     } else {
 
