@@ -1386,11 +1386,11 @@ body {
 ===================================== */
 
 body {
-    background: #fff8dc;
+    background: #faf0e6;
 }
 
 .site {
-    background: #fff8dc;
+    background: #faf0e6;
 }
 
 .header,
@@ -1402,5 +1402,5 @@ body {
 .column-page,
 .question-page,
 .result-page {
-    background: #fff8dc;
+    background: #faf0e6;
 }
