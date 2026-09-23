@@ -1401,3 +1401,21 @@ body {
 .result-page {
     background: #faf0e6;
 }
+
+/* =====================================
+   Footerを画面下に配置
+===================================== */
+
+.site {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.site > main {
+    flex: 1;
+}
+
+.footer {
+    margin-top: auto;
+}
