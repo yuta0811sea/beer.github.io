@@ -1421,3 +1421,29 @@ body {
 }
 
 
+/* =====================================
+   Menu：PC・タブレットでも中央表示
+===================================== */
+
+/* 初期状態：画面の右側に隠す */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 50%;
+
+    width: min(100%, 430px);
+    height: 100vh;
+
+    background: #a51e25;
+    color: #ffffff;
+
+    z-index: 1000;
+
+    transform: translateX(calc(-50% + 100%));
+    transition: transform 0.3s ease;
+}
+
+/* MENUを開いた状態 */
+body:has(.menu-check:checked) .menu-overlay {
+    transform: translateX(-50%);
+}
