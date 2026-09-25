@@ -1415,16 +1415,12 @@ body {
 }
 
 /* =====================================
-   Tablet / PCではメニューを非表示
+   Tablet / PCではメニュー本体を非表示
 ===================================== */
 
 @media screen and (min-width: 431px) {
 
     .menu-overlay {
-        display: none;
-    }
-
-    .menu-button {
         display: none;
     }
 
