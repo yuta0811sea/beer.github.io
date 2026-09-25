@@ -470,13 +470,7 @@ body {
    PCで見たとき
 ===================================== */
 
-@media screen and (min-width: 431px) {
 
-    .site {
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-    }
-
-}
 
 .menu-check{
    display: none;
@@ -1420,34 +1414,3 @@ body {
     margin-top: auto;
 }
 
-/* =====================================
-   Tablet Layout
-===================================== */
-
-@media screen and (min-width: 600px) {
-
-    .site {
-        max-width: 768px;
-    }
-
-    .menu-overlay {
-        max-width: 768px;
-    }
-
-    .header {
-        padding: 0 30px;
-    }
-
-    .hero,
-    .beer-section,
-    .column-section,
-    .beer-page,
-    .beer-detail,
-    .column-page,
-    .question-page,
-    .result-page {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-}
