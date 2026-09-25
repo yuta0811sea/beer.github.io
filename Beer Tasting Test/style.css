@@ -1414,3 +1414,18 @@ body {
     margin-top: auto;
 }
 
+/* =====================================
+   Tablet / PCではメニューを非表示
+===================================== */
+
+@media screen and (min-width: 431px) {
+
+    .menu-overlay {
+        display: none;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+}
