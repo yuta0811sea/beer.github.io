@@ -1617,37 +1617,39 @@ body {
 }
 
 
-/* 左 */
+/* -------------------------------------
+   左グラス
+------------------------------------- */
 
 .glass-left {
-    left: 25px;
+    left: 20px;
 
-    animation:
-        glassLeft 2.2s ease-in-out forwards;
+    animation: toastLeft 2.2s ease-in-out forwards;
 }
 
 
-/* 右 */
+/* -------------------------------------
+   右グラス
+------------------------------------- */
 
 .glass-right {
-    right: 25px;
+    right: 20px;
 
-    animation:
-        glassRight 2.2s ease-in-out forwards;
+    animation: toastRight 2.2s ease-in-out forwards;
 }
 
 
 /* =====================================
-   左グラス
+   左グラスのアニメーション
 ===================================== */
 
-@keyframes glassLeft {
+@keyframes toastLeft {
 
     0% {
         opacity: 0;
 
         transform:
-            translateX(-90px)
+            translateX(-80px)
             rotate(-20deg);
     }
 
@@ -1661,13 +1663,13 @@ body {
 
     55% {
         transform:
-            translateX(35px)
-            rotate(-2deg);
+            translateX(20px)
+            rotate(-3deg);
     }
 
     68% {
         transform:
-            translateX(31px)
+            translateX(20px)
             rotate(-5deg);
     }
 
@@ -1675,7 +1677,7 @@ body {
         opacity: 1;
 
         transform:
-            translateX(30px)
+            translateX(20px)
             rotate(-5deg);
     }
 
@@ -1683,16 +1685,16 @@ body {
 
 
 /* =====================================
-   右グラス
+   右グラスのアニメーション
 ===================================== */
 
-@keyframes glassRight {
+@keyframes toastRight {
 
     0% {
         opacity: 0;
 
         transform:
-            translateX(90px)
+            translateX(80px)
             rotate(20deg);
     }
 
@@ -1706,13 +1708,13 @@ body {
 
     55% {
         transform:
-            translateX(-35px)
-            rotate(2deg);
+            translateX(-20px)
+            rotate(3deg);
     }
 
     68% {
         transform:
-            translateX(-31px)
+            translateX(-20px)
             rotate(5deg);
     }
 
@@ -1720,12 +1722,11 @@ body {
         opacity: 1;
 
         transform:
-            translateX(-30px)
+            translateX(-20px)
             rotate(5deg);
     }
 
 }
-
 
 /* =====================================
    オープニング終了
