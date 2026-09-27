@@ -1561,9 +1561,9 @@ body {
 
     overflow: hidden;
 
-    opacity: 1;
+    /* 2.8秒後に自動で消える */
+    animation: openingFadeOut 0.8s ease 2.8s forwards;
 
-    pointer-events: auto;
 }
 
 
@@ -1604,26 +1604,24 @@ body {
 
 
 /* -------------------------------------
-   左グラス
+   左
 ------------------------------------- */
 
 .glass-left {
     left: 28px;
 
-    animation:
-        toastLeft 2.2s ease-in-out forwards;
+    animation: toastLeft 2.2s ease-in-out forwards;
 }
 
 
 /* -------------------------------------
-   右グラス
+   右
 ------------------------------------- */
 
 .glass-right {
     right: 28px;
 
-    animation:
-        toastRight 2.2s ease-in-out forwards;
+    animation: toastRight 2.2s ease-in-out forwards;
 }
 
 
@@ -1635,7 +1633,6 @@ body {
 
     0% {
         opacity: 0;
-
         transform:
             translateX(-90px)
             rotate(-20deg);
@@ -1643,7 +1640,6 @@ body {
 
     35% {
         opacity: 1;
-
         transform:
             translateX(0)
             rotate(-12deg);
@@ -1663,7 +1659,6 @@ body {
 
     100% {
         opacity: 1;
-
         transform:
             translateX(30px)
             rotate(-5deg);
@@ -1676,7 +1671,6 @@ body {
 
     0% {
         opacity: 0;
-
         transform:
             translateX(90px)
             rotate(20deg);
@@ -1684,7 +1678,6 @@ body {
 
     35% {
         opacity: 1;
-
         transform:
             translateX(0)
             rotate(12deg);
@@ -1704,7 +1697,6 @@ body {
 
     100% {
         opacity: 1;
-
         transform:
             translateX(-30px)
             rotate(5deg);
@@ -1717,56 +1709,17 @@ body {
    オープニング終了
 ===================================== */
 
-.opening.is-hidden {
-
-    animation:
-        openingFadeOut 0.8s ease forwards;
-
-    pointer-events: none;
-}
-
-
 @keyframes openingFadeOut {
 
-    from {
+    0% {
         opacity: 1;
         visibility: visible;
     }
 
-    to {
+    100% {
         opacity: 0;
         visibility: hidden;
-    }
-
-}
-
-
-/* =====================================
-   スマホ表示を優先
-===================================== */
-
-@media screen and (max-width: 767px) {
-
-    .opening {
-        width: 100vw;
-        height: 100vh;
-        height: 100dvh;
-    }
-
-}
-
-
-/* =====================================
-   動きを減らしたい環境
-===================================== */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .glass-left,
-    .glass-right {
-        animation: none;
-        opacity: 1;
-        transform: none;
+        pointer-events: none;
     }
 
 }
