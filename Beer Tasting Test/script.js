@@ -228,23 +228,3 @@ if (resultPage) {
     }
 }
 
-/* =====================================
-   Opening Animation
-===================================== */
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const opening = document.getElementById("opening");
-
-    if (!opening) {
-        return;
-    }
-
-    setTimeout(() => {
-
-        opening.classList.add("is-hidden");
-
-    }, 2800);
-
-});
-});
