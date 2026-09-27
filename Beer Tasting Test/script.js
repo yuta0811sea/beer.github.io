@@ -232,7 +232,7 @@ if (resultPage) {
    Opening Animation
 ===================================== */
 
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
     const opening = document.getElementById("opening");
 
@@ -246,4 +246,5 @@ window.addEventListener("load", () => {
 
     }, 2800);
 
+});
 });
