@@ -1538,7 +1538,24 @@ body {
 }
 
 /* =====================================
-   Opening Animation
+   Opening Page
+===================================== */
+
+.opening-page {
+    margin: 0;
+
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    background: #a51e25;
+
+    overflow: hidden;
+}
+
+
+/* =====================================
+   Opening
 ===================================== */
 
 .opening {
@@ -1547,23 +1564,22 @@ body {
     top: 0;
     left: 0;
 
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     height: 100dvh;
-
-    background: #a51e25;
-
-    z-index: 99999;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    overflow: hidden;
+    background: #a51e25;
 
-    /* 2.8秒後に自動で消える */
-    animation: openingFadeOut 0.8s ease 2.8s forwards;
+    z-index: 9999;
 
+    /*
+     * 2.3秒後からフェードアウト
+     */
+    animation: openingFadeOut 0.7s ease 2.3s forwards;
 }
 
 
@@ -1575,21 +1591,19 @@ body {
     position: relative;
 
     width: 180px;
-    height: 140px;
+    height: 150px;
 }
 
 
-/* -------------------------------------
-   グラス本体
-------------------------------------- */
+/* グラス本体 */
 
 .glass {
     position: absolute;
 
-    bottom: 15px;
+    bottom: 20px;
 
     width: 52px;
-    height: 82px;
+    height: 85px;
 
     border: 3px solid #ffffff;
 
@@ -1603,36 +1617,35 @@ body {
 }
 
 
-/* -------------------------------------
-   左
-------------------------------------- */
+/* 左 */
 
 .glass-left {
-    left: 28px;
+    left: 25px;
 
-    animation: toastLeft 2.2s ease-in-out forwards;
+    animation:
+        glassLeft 2.2s ease-in-out forwards;
 }
 
 
-/* -------------------------------------
-   右
-------------------------------------- */
+/* 右 */
 
 .glass-right {
-    right: 28px;
+    right: 25px;
 
-    animation: toastRight 2.2s ease-in-out forwards;
+    animation:
+        glassRight 2.2s ease-in-out forwards;
 }
 
 
 /* =====================================
-   乾杯アニメーション
+   左グラス
 ===================================== */
 
-@keyframes toastLeft {
+@keyframes glassLeft {
 
     0% {
         opacity: 0;
+
         transform:
             translateX(-90px)
             rotate(-20deg);
@@ -1640,6 +1653,7 @@ body {
 
     35% {
         opacity: 1;
+
         transform:
             translateX(0)
             rotate(-12deg);
@@ -1651,7 +1665,7 @@ body {
             rotate(-2deg);
     }
 
-    65% {
+    68% {
         transform:
             translateX(31px)
             rotate(-5deg);
@@ -1659,6 +1673,7 @@ body {
 
     100% {
         opacity: 1;
+
         transform:
             translateX(30px)
             rotate(-5deg);
@@ -1667,10 +1682,15 @@ body {
 }
 
 
-@keyframes toastRight {
+/* =====================================
+   右グラス
+===================================== */
+
+@keyframes glassRight {
 
     0% {
         opacity: 0;
+
         transform:
             translateX(90px)
             rotate(20deg);
@@ -1678,6 +1698,7 @@ body {
 
     35% {
         opacity: 1;
+
         transform:
             translateX(0)
             rotate(12deg);
@@ -1689,7 +1710,7 @@ body {
             rotate(2deg);
     }
 
-    65% {
+    68% {
         transform:
             translateX(-31px)
             rotate(5deg);
@@ -1697,6 +1718,7 @@ body {
 
     100% {
         opacity: 1;
+
         transform:
             translateX(-30px)
             rotate(5deg);
@@ -1713,13 +1735,45 @@ body {
 
     0% {
         opacity: 1;
-        visibility: visible;
     }
 
     100% {
         opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
+    }
+
+}
+
+
+/* =====================================
+   スマホ
+===================================== */
+
+@media screen and (max-width: 767px) {
+
+    .opening {
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh;
+    }
+
+}
+
+
+/* =====================================
+   動きを減らす設定
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .glass-left,
+    .glass-right {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .opening {
+        animation: none;
     }
 
 }
