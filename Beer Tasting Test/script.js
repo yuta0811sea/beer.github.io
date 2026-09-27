@@ -228,4 +228,22 @@ if (resultPage) {
     }
 }
 
+/* =====================================
+   Opening Animation
+===================================== */
 
+window.addEventListener("load", () => {
+
+    const opening = document.getElementById("opening");
+
+    if (!opening) {
+        return;
+    }
+
+    setTimeout(() => {
+
+        opening.classList.add("is-hidden");
+
+    }, 2800);
+
+});
